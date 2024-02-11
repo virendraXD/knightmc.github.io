@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form Box</title>
+    <link rel="stylesheet" href="/css-files/register.css">
+</head>
+
+<body>
+  <header>
+    <h1><img src="/images/knightmc-logo-removebg.png"></h1>
+    
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="#">Store</a>
+        <a href="/html-files/threads.html">Threads</a>
+        <a href="https://discord.gg/XC38VQJReu">Discord</a>
+        <button id="login-button"><a href="/html-files/login.html">Log in</a> </button>
+    </nav>
+  </header>
+
+    <div class="register-form-box">
+      <div class="header">Register</div>
+        
+        <form action="register.php" method="post">
+          <div class="form-group">
+            <input type="username" class="input-field" placeholder="Username">
+          </div>
+
+          <div class="form-group">
+            <input type="email" class="input-field" placeholder="Email">
+          </div>
+    
+          <div class="form-group">
+            <input type="password" class="input-field" placeholder="Password">
+          </div>
+
+          <div class="form-group">
+            <input type="password" class="input-field" placeholder="Confirm password">
+          </div>
+
+          <div class="button-container">
+            <button class="register-button">Register</button>
+            <a href="#" class="register-button">Register</a>
+
+            <button class="login-button">Login</button>
+            <a href="/html-files/login.html" class="login-button">Login</a>
+
+            <p>╼╼╼╼╼╼╼╼╼ ㅤORㅤ ╼╼╼╼╼╼╼╼╼</p>
+
+            <button class="discord-button">Login with Discord</button>
+            <a href="your_discord_login_url" class="social-button discord-button">
+              <img src="/images/discord-mark-white.svg">
+              Login with Discord
+            </a>
+
+            <button class="google-button">Login with Google</button>
+            <a href="your_googlr_login_url" class="social-button google-button">
+              <img src="/images/google-icon.svg">
+              Login with Google
+            </a>
+          </div>
+        </form>
+
+    </div>
+</body>
+
+</html>
