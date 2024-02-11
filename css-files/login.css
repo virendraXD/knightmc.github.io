@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141414;
+    min-height: 70vh; 
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99z;
+  background-color: transparent; /* color */
+  padding: 20px; /* Add some padding around the header */
+  text-align: center; /* Center the text within the header */
+}
+
+img{
+  height: 38px;
+} 
+
+
+
+/* <--------------------------- NAVIGATION ------------------------------> */
+
+.navigation a {
+    position: relative; 
+    text-align: center;
+    width: 100%;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 30px;
+}
+
+.navigation a::after { 
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+/* <--------------------------- NAVIGATION LOGIN BUTTON ------------------------------> */
+
+#login-button {
+    width: 130px;
+    height: 50px;
+    background: #ff9100;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: white;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+#login-button:hover {
+    background: #d17702;
+    color: black;
+}
+
+/* <-------------------------- LOGIN BOX -----------------------------> */
+
+.login-form-box {
+    width: 540px;
+    height: 510px;
+    padding: 30px;
+    margin: 50px auto;
+    background-color:rgb(27, 28, 29);
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-form-box .header {
+    position:relative;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff9100;
+    margin-bottom: 30px;
+  }
+  
+  .login-form-box .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .login-form-box .input-field {
+    width: 100%;
+    padding: 10px ;
+    margin: 5px 0;
+    border: 1px solid #333333;
+    border-radius: 4px;
+    background-color: #272424; /* Change this line to change the color of the email input box */    
+    color: #c5c5c5;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-form-box .input-field:focus {
+    outline: none;
+    border-color: #818181;
+  }
+  
+  .login-form-box .remember-me {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin-bottom: 20px;
+    margin-right: 316px;
+    padding: 10px 20px;
+    background-color: #333333;
+    color: #c4c4c4;
+    border: none;
+    border-radius: 4px;
+    /*cursor: pointer;*/
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:active {
+    background-color: #ff9100;
+  }
+  
+  .login-form-box .remember-me label {
+    margin-right: 0;
+    font-size: 16px;
+  }
+  
+  .login-form-box .remember-me input[type="checkbox"] {
+    accent-color: #ffffff;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .login-form-box .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 120px;
+  }
+  
+  .login-form-box .login-button {
+    position: absolute;
+    margin-right: 265px;
+    padding: 10px 85px;
+    height: max-content;
+    margin-top: 55px;
+    font-size: 16px;
+    background-color: #ff9100;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .login-form-box .login-button:hover {
+    background-color: #d17702;
+  }
+  
+  .login-form-box .register-button {
+    position: absolute;
+    margin-left: 265px;
+    padding: 10px 82px;
+    height: max-content;
+    margin-top: 55px;
+    font-size: 16px;
+    background-color: #ff9100;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .login-form-box .register-button:hover {
+    background-color: #d17702;
+  }
+  
+  p {
+    color: #ffffff;
+    font-size: 18px;
+    position: absolute;
+    margin-top: 155px;
+    cursor: default;
+  }
+  
+  .login-form-box .discord-button {
+    position: absolute;
+    padding: 10px 43px;
+    margin-left: 265px;
+    margin-top: 255px ;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #5865F2;
+    border: 1px solid #333;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .login-form-box .discord-button img {
+    width: 25px; /* Adjust the width of the logo */
+    height: 20px; /* Adjust the height of the logo */
+    /* margin-right: 8px; /* Add some space between the logo and the text */
+    position: absolute;
+    left: 9px;
+  }
+  
+   .login-form-box .google-button {
+    position: absolute;
+    padding: 10px 43px;
+    margin-right: 265px;
+    margin-top: 255px ;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #585656;
+    background-color: #eaebf0;
+    border: 1px solid #333;
+    cursor: pointer;
+    text-decoration: none;
+  } 
+  
+  .login-form-box .google-button img {
+    width: 28px; /* Adjust the width of the logo */
+    height: 23px; /* Adjust the height of the logo */
+    /* margin-right: 8px; /* Add some space between the logo and the text */
+    position: absolute;
+    left: 9px;
+  }
+  
+  .login-form-box .link-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 170px;
+    font-size: 14px;
+  }
+  
+  .login-form-box .link {
+    font-size: 16px;
+    color: #c4c4c4;
+    text-decoration: none;
+    margin: 0 2px;
+    transition: color 0.3s ease;
+  }
+  
+  .login-form-box .link:hover {
+    color: #9e9e9e;
+  }
+
+  p2 {
+    font-size: 18px;
+    color: #ffffff;
+    cursor: default;
+  }
+
