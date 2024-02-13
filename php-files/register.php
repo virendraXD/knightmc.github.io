@@ -1,5 +1,5 @@
 <?php
-require_once 'config.php';
+require_once '../php-files/config.php';
 
 $host = 'your_host';
 $dbname = 'your_database_name';
